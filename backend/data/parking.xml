@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<parkingInformation>
+
+    <area>
+        <id>1</id>
+        <name>Main Block Parking</name>
+        <openingTime>08:00 AM</openingTime>
+        <closingTime>08:00 PM</closingTime>
+    </area>
+
+    <area>
+        <id>2</id>
+        <name>Library Parking</name>
+        <openingTime>08:00 AM</openingTime>
+        <closingTime>07:00 PM</closingTime>
+    </area>
+
+    <area>
+        <id>3</id>
+        <name>Cafeteria Parking</name>
+        <openingTime>08:00 AM</openingTime>
+        <closingTime>08:00 PM</closingTime>
+    </area>
+
+    <area>
+        <id>4</id>
+        <name>Sports Complex Parking</name>
+        <openingTime>06:00 AM</openingTime>
+        <closingTime>09:00 PM</closingTime>
+    </area>
+
+    <area>
+        <id>5</id>
+        <name>Academic Block Parking</name>
+        <openingTime>08:00 AM</openingTime>
+        <closingTime>08:00 PM</closingTime>
+    </area>
+
+</parkingInformation>

@@ -1,0 +1,539 @@
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #dcd2f5;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #49347c;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-links button {
+    border: none;
+    background: transparent;
+    padding: 10px 16px;
+    border-radius: 20px;
+    color: #49347c;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar-links button:hover {
+    background: #cbbce9;
+}
+
+.navbar-links button.active {
+    background: #6c4ab6;
+    color: white;
+}
+
+
+/* =========================
+   HOME / DASHBOARD
+   ========================= */
+
+.home-page {
+    min-height: 100vh;
+    background: #f6f3ff;
+}
+
+.hero-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #6c4ab6, #8f6ed5);
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.small-title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.check-button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #6c4ab6;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.check-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.reset-button {
+    padding: 14px 28px;
+    border: 2px solid #6c4ab6;
+    border-radius: 30px;
+    background: white;
+    color: #6c4ab6;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background: #f0ebff;
+}
+
+
+/* =========================
+   ABOUT SECTION
+   ========================= */
+
+.about-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    color: #49347c;
+    margin-bottom: 20px;
+}
+
+.about-section > p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* =========================
+   INFORMATION CARDS
+   ========================= */
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    width: 280px;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-7px);
+}
+
+.info-card h3 {
+    color: #6c4ab6;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   DASHBOARD BUTTONS
+   ========================= */
+
+.dashboard-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   PARKING PAGES
+   ========================= */
+
+.parking-page {
+    min-height: 100vh;
+    padding: 70px 8%;
+    background: #eee9ff;
+}
+
+.parking-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.parking-header .small-title {
+    color: #6c4ab6;
+    margin-bottom: 12px;
+}
+
+.parking-header h1 {
+    font-size: 38px;
+    color: #49347c;
+    margin-bottom: 15px;
+}
+
+.parking-header p {
+    color: #666;
+    font-size: 17px;
+}
+
+.parking-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* =========================
+   CHECK BOX
+   ========================= */
+
+.check-box {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.check-box h2 {
+    color: #49347c;
+    margin-bottom: 25px;
+}
+
+.check-box label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.check-box select,
+.check-box input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d5cceb;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.check-box select:focus,
+.check-box input:focus {
+    border-color: #6c4ab6;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.check-box .check-button {
+    background: #6c4ab6;
+    color: white;
+}
+
+.check-box .check-button:hover {
+    background: #57399b;
+}
+
+
+/* =========================
+   SEARCH AND FILTER
+   ========================= */
+
+.search-filter {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.search-filter input,
+.search-filter select {
+    padding: 13px 15px;
+    border: 1px solid #d5cceb;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-filter input {
+    flex: 1;
+}
+
+.search-filter select {
+    width: 180px;
+}
+
+
+/* =========================
+   PARKING CARDS
+   ========================= */
+
+.parking-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.parking-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.parking-card h3 {
+    color: #49347c;
+    margin-bottom: 15px;
+}
+
+.parking-card p {
+    color: #666;
+    margin: 8px 0;
+}
+
+.card-status {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 7px 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-status.available {
+    background: #2e9d5b;
+}
+
+.card-status.limited {
+    background: #d99a00;
+}
+
+.card-status.full {
+    background: #d64545;
+}
+
+
+/* =========================
+   RESULT CARD
+   ========================= */
+
+.result-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.result-card h2 {
+    text-align: center;
+    color: #6c4ab6;
+    margin-bottom: 30px;
+}
+
+.result-details {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+}
+
+.result-details div {
+    flex: 1;
+    padding: 20px;
+    background: #f6f3ff;
+    border-radius: 15px;
+}
+
+.result-details span {
+    display: block;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.result-details strong {
+    display: block;
+    font-size: 30px;
+    color: #49347c;
+}
+
+
+/* =========================
+   STATUS
+   ========================= */
+
+.status-box {
+    margin-top: 30px;
+    padding: 18px;
+    text-align: center;
+    border-radius: 15px;
+    background: #f6f3ff;
+}
+
+.status-box span {
+    display: block;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.status-box strong {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+    background: #6c4ab6;
+}
+
+.status-box.available {
+    background: #e8f8ee;
+}
+
+.status-box.available strong {
+    background: #2e9d5b;
+}
+
+.status-box.limited {
+    background: #fff7df;
+}
+
+.status-box.limited strong {
+    background: #d99a00;
+}
+
+.status-box.full {
+    background: #ffe8e8;
+}
+
+.status-box.full strong {
+    background: #d64545;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-links button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .about-section {
+        padding: 50px 20px;
+    }
+
+    .parking-page {
+        padding: 50px 20px;
+    }
+
+    .parking-header h1 {
+        font-size: 30px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .result-details {
+        flex-direction: column;
+    }
+
+    .search-filter {
+        flex-direction: column;
+    }
+
+    .search-filter select {
+        width: 100%;
+    }
+
+    .parking-list {
+        grid-template-columns: 1fr;
+    }
+}
